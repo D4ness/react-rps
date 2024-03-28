@@ -1,0 +1,24 @@
+.sign__button{
+  background: none;
+  min-height: 124px;
+  min-width: 124px;
+  color: black;
+  border: none;
+// TODO Сделать кликабельную область круглой
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sign {
+  min-height: 124px;
+  min-width: 124px;
+  border: 15px solid orangered;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

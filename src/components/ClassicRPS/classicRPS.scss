@@ -1,0 +1,21 @@
+@import '@/assets/globals';
+
+.signs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 42px;
+
+  background-size: calc(100% - $sign-size/2);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+  }
+}

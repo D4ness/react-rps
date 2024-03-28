@@ -1,0 +1,51 @@
+.result__wrapper {
+  display: flex;
+  gap: 42px;
+  align-items: center;
+}
+
+.result {
+  &__wrapper {
+    display: flex;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  &__title {
+    color: white;
+    font-size: 24px;
+    max-width: 124px;
+    text-align: center;
+  }
+
+  &__answer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+
+    & p {
+      color: white;
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+      max-width: 250px;
+      text-align: center;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    padding: 24px 12px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: midnightblue;
+  }
+}

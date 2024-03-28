@@ -1,0 +1,17 @@
+.counter {
+  background: white;
+  border-radius: 10px;
+  min-width: 96px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 30px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__value {
+    text-align: center;
+  }
+}
