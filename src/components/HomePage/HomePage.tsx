@@ -44,7 +44,7 @@ export const HomePage = ({size}: IProps) => {
 
     return (
         <>
-            <Header counterValue={counterValue}/>
+            <Header counterValue={counterValue} size={size}/>
             <section>
                 {size === 3 && userResult === null ?
                     <ClassicRPS
