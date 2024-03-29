@@ -3,6 +3,7 @@ import paperIcon from '@/assets/images/icon-paper.svg';
 import scissorsIcon from '@/assets/images/icon-scissors.svg';
 import lizardIcon from '@/assets/images/icon-lizard.svg';
 import spockIcon from '@/assets/images/icon-spock.svg';
+
 export enum Signs {
     Rock = 'Камень',
     Paper = 'Бумага',
@@ -15,7 +16,7 @@ export enum SignColors {
     RockColor = '#DC2E4E',
     PaperColor = '#EC9E0E',
     ScissorsColor = '#4865F4',
-    LizardColor = 'purple',
+    LizardColor = 'green',
     SpockColor = 'purple'
 }
 
@@ -30,9 +31,9 @@ export type SignsStateType = Record<string, SignType>;
 export const allSignsClassic: SignsStateType = { // Вынести в отдельное хранилище
     1: {
         id: 1,
-        label: Signs.Rock,
-        icon: rockIcon,
-        color: SignColors.RockColor
+        label: Signs.Scissors,
+        icon: scissorsIcon,
+        color: SignColors.ScissorsColor
     },
     2: {
         id: 2,
@@ -42,9 +43,9 @@ export const allSignsClassic: SignsStateType = { // Вынести в отдел
     },
     3: {
         id: 3,
-        label: Signs.Scissors,
-        icon: scissorsIcon,
-        color: SignColors.ScissorsColor
+        label: Signs.Rock,
+        icon: rockIcon,
+        color: SignColors.RockColor
     },
     4: {
         id: 4,

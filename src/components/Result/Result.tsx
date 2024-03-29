@@ -9,9 +9,11 @@ interface IProps {
     compSign: SignType;
     onClick: () => void;
     size: number;
+    setCounter: React.Dispatch<React.SetStateAction<number>>;
 }
 
 export const Result = ({userSign, compSign, onClick, size}: IProps) => {
+
     return (
         <div className='result__wrapper'>
             <div className='result'>
@@ -19,7 +21,7 @@ export const Result = ({userSign, compSign, onClick, size}: IProps) => {
                 <Sign sign={userSign}/>
             </div>
             <div className='result__answer'>
-                <p>{compareResults(userSign.id, compSign.id, size)}</p>
+                <p>{compareResults(userSign.id, compSign.id, size).result}</p>
                 <button
                     className='result__button'
                     onClick={() => onClick()}
