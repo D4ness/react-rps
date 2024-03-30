@@ -17,7 +17,7 @@
   &__title {
     color: white;
     font-size: 24px;
-    max-width: 124px;
+    max-width: 142px;
     text-align: center;
   }
 
@@ -47,5 +47,26 @@
     font-weight: 700;
     text-transform: uppercase;
     color: midnightblue;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 576px) {
+  .result {
+
+
+    &__wrapper {
+      margin: 20px;
+      flex-direction: column;
+    }
+
+    &__answer p {
+      font-size: 24px;
+    }
+
+    &__button {
+      gap: 16px 8px;
+      font-size: 12px;
+    }
   }
 }
