@@ -6,7 +6,7 @@
   justify-content: center;
   margin-top: 42px;
 
-  background-size: calc(100% - $sign-size / 2);
+  background-size: calc(100% - var(--sign-size) / 2);
   background-position-x: center;
   background-repeat: no-repeat;
   background-position-y: calc(50%);
@@ -14,11 +14,11 @@
   &__row {
     display: flex;
     justify-content: center;
-    gap: calc($sign-size / 2);
+    gap: calc(var(--sign-size) / 2);
 
     &_middle {
-      gap: calc($sign-size*1.5);
-      margin-bottom: calc($sign-size / 2);
+      gap: calc(var(--sign-size)*1.5);
+      margin-bottom: calc(var(--sign-size) / 2);
     }
   }
 

@@ -10,7 +10,7 @@ interface IProps {
 export const SignComponent = ({sign}: IProps) => {
     return (
         <div className='sign' style={{borderColor: sign.color}}>
-            <img src={sign.icon} alt=''/>
+            <img src={sign.icon} alt='' className='sign__icon'/>
         </div>
     );
 };

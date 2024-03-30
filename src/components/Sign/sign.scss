@@ -2,8 +2,8 @@
 
 .sign__button {
   background: none;
-  height: $sign-size;
-  width: $sign-size;
+  height: var(--sign-size);
+  width: var(--sign-size);
   border-radius: 50%;
   color: black;
   border: none;
@@ -34,12 +34,22 @@
 }
 
 .sign {
-  height: $sign-size;
-  width: $sign-size;
+  height: var(--sign-size);
+  width: var(--sign-size);
   border: 15px solid orangered;
   border-radius: 50%;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &__icon {
+    height: 65%;
+  }
+}
+
+@media (max-width: 576px) {
+  .sign {
+    border-width: 8px;
+  }
 }

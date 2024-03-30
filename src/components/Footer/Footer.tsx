@@ -11,7 +11,7 @@ export const Footer = ({size} :IProps) => {
             <div className='footer__buttons'>
                 {size === 3 && <Link to='/bonus' className='footer__button'>Бонус</Link>}
                 {size === 5 && <Link to='/' className='footer__button'>Оригинал</Link>}
-                <Link to='/bonus' className='footer__button'>Правила</Link>
+                <Link to='/rules' className='footer__button'>Правила</Link>
             </div>
         </footer>
     );
